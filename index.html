@@ -1,56 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="stylesheet" href="./assets/style.css">
-  
-  <title>Frontend Mentor | Room homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-</head>
-<body>
-  Home
-  Shop
-  About
-  Contact
+    <link rel="stylesheet" href="./assets/style.css" />
 
-  Discover innovative ways to decorate
+    <script src="./assets/script.js" defer></script>
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
+    <title>Frontend Mentor | Room homepage</title>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img class="img__main" src="./images/desktop-image-hero-1.jpg" alt="Chairs and table" />
+        <source media="(min-width: 768px) and (max-width: 1920px)" srcset="./images/desktop-image-hero-1.jpg">
+        <source media="(max-width: 475px)" srcset="./images/mobile-image-hero-1.jpg">        
+      </picture>
+      <div class="header__one">
+        <div class="logo">
+          <img class="menu__mobile" src="./images/icon-hamburger.svg" alt="Menu Mobile">
 
-  Shop now
+          <img class="img__logo" src="./images/logo.svg" alt="Logo" />
+        </div>
+        <nav>
+          <div class="close">
+            <img src="./images/icon-close.svg" alt="X">
+          </div>
+          <ul class="menu">
+            <li class="menu__item"><a href="#">Home</a></li>
+            <li class="menu__item"><a href="#">Shop</a></li>
+            <li class="menu__item"><a href="#">About</a></li>
+            <li class="menu__item"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
 
-  We are available all across the globe
+      <div class="header__two">
+        <h1 class="title" id="title">Discover innovative ways to decorate</h1>
+        <p class="description header__description" id="header__description">
+          We provide unmatched quality, comfort, and style for property owners
+          across the country. Our experts combine form and function in bringing
+          your vision to life. Create a room in your own style with our
+          collection and make your property a reflection of you and what you
+          love.
+        </p>
+        <button class="btn">Shop now</button>
 
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
+        <div class="angle">
+          <div class="angle__left" >
+            <img src="./images/icon-angle-left.svg" alt="Left"/>
+          </div>
+          <div  class="angle__right">
+            <img src="./images/icon-angle-right.svg" alt="Right"/>
+          </div>
+        </div>
+      </div>
+    </header>
 
-  Shop now
+    <main>
+      <section class="about">
+        <article class="box__one">
+          <img src="./images/image-about-dark.jpg" alt="Dark room" />
+        </article>
 
-  Manufactured with the best materials
+        <article class="box__two">
+          <h2 class="subtitle">About our furniture</h2>
 
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
+          <p class="about__description">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </article>
 
-  Shop now
+        <article class="box__three">
+          <img src="./images/image-about-light.jpg" alt="Light room" />
+        </article>
+      </section>
+    </main>
 
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Leonardo Amaral</a>.
+    </div>
+  </body>
 </html>
